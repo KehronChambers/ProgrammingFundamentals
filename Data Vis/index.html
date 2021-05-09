@@ -1,0 +1,308 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>index</title>
+<link href="css/index.css" rel="stylesheet" type="text/css"><!--css link established-->
+<script defer src="js/index.js"></script><!--js link established-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script><!--j query/ajax link-->
+</head>
+
+<body>
+<div id="mask"></div><!--creates darken background when modal popup opens-->
+
+
+<header id="heading">PlayStation One (1993 - 1998)</header><!--title-->
+	
+</body>
+	
+	
+<div class="playstation console"><!--image for the ps1-->
+	<img class="ps1" src="images/ps1console.png" alt="Playstation One Console Image"><!--retrieved from https://www.youtube.com/watch?v=_w6N_nplmAw-->
+	</div>
+	
+	
+<p class="100m" id="100m">100 MILLION UNITS</p><!--text on screen-->
+	
+<p1 id="worldwide">WORLDWIDE</p1><!--text on screen-->
+	
+<p2 id="1995">1995</p2><!--text on screen-->
+		
+<div class="price tag"><!--price tag image-->
+	<img class="pricetag" src="images/pricetag.png" alt="Price Tag Image">
+	</div>
+	
+	
+<div class="calendar"><!--calendar image-->
+	<img class="calendar" src="images/calendar1.png" alt="Calendar">
+	</div>
+	
+<p4 id="best">BEST</p4><!--text on screen-->	
+<p5 id="selling">SELLING</p5><!--text on screen-->	
+<p6 id="games">GAMES</p6><!--text on screen-->	
+
+<div class="container"> <!-- retrieved from https://www.w3schools.com/howto/howto_css_image_overlay.asp -->
+  <input type="image" src="images/ff7.jpg" alt="Final Fantasy 7" class="image" style="width:100%">	
+  <div class="middle"><!--overlay with ff7 text-->
+    <div class="text">Final Fantasy 7</div>
+  </div>
+</div>
+	
+ <div class="modal2 active" id="modal2">
+	  
+	  <div class="modal-header1">
+		  
+	  	<div class="title1">Final Fantasy 7</div>
+		  
+		<button class="close-button1" id="close1">&times;</button>
+		  
+	  </div><!--modal popup from final fantasy 7 button. jquery used to create the popup.-->
+	  <div class="modal-body1">
+	  
+<div id="showTEXT"></div><br>
+		  
+<input type="button" id="previousbutton2" onclick="previous2()" value="<<">
+		  
+<input type="button" id="nextbutton2" onclick="next2()" value=">>">
+
+<script>//also retrieved from https://www.w3schools.com/xml/ajax_applications.asp
+var i = 0;
+var x;
+displayTEXT(i);
+
+function displayTEXT(i) {
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            ff7infoFunction(this, i);
+        }
+    };
+    xmlhttp.open("GET", "ff7_info.xml", true);
+    xmlhttp.send();
+}//function used to send an xml request and opens the xml file specified
+
+function ff7infoFunction(xml, i) {
+    var xmlDoc = xml.responseXML; 
+    x2 = xmlDoc.getElementsByTagName("INFO");
+    document.getElementById("showTEXT").innerHTML =
+    x2[i].getElementsByTagName("TEXT")[0].childNodes[0].nodeValue;
+}//function used to display elements specified and how
+
+function next2() {
+if (i < x2.length-1) {
+  i++;
+  displayTEXT(i);
+  }
+}//function used to look at next data element
+
+function previous2() {	
+if (i > 0) {
+  i--;
+  displayTEXT(i);
+  }
+}//function used to diplay previous data element
+</script>
+	  
+</div>
+</div>
+		
+<img src="images/ff8.jpg" alt="Final Fantasy 8" class="image2"><!--image ff8-->
+	
+<img src="images/gt.jpg" alt="Gran Turismo" class="image3"><!--image gt-->
+	
+<img src="images/gt2.jpg" alt="Gran Turismo 2" class="image4"><!--image gt2-->
+	
+<img src="images/tekken3.jpg" alt="Tekken 3" class="image5"><!--image tekken-->
+
+<div class="vl"></div> <!--retrieved from https://www.w3schools.com/howto/howto_css_vertical_line.asp vertical line. timeline line.-->
+
+
+<div class="circle"></div> <!-- retrieved from https://www.w3schools.com/howto/howto_css_shapes.asp circles on line-->
+<div class="circle1"></div>
+<div class="circle2"></div>
+<div class="circle3"></div>
+<div class="circle4"></div>
+<div class="circle5"></div><!--circles on timeline-->
+	
+<div class="circle6"></div>
+<div class="circle7"></div>
+<div class="circle8"></div><!--cirlces on console-->
+	
+<button type="button" id="button4">1993</button>
+	
+<button type="button" id="button3">1994</button>
+	
+<button type="button" id="button5">1996</button>
+	
+<button type="button" id="button6">1997</button>
+	
+<button type="button" id="button7">1998</button>
+	
+<button type="button" id="modal" onClick="loadXMLDoc()">1995</button> <!--all the buttons on timeline. retrieved from https://www.youtube.com/watch?v=MBaw_6cPmAw 1995 button that has xml function-->
+<div class="modal" id="modal1"><!--modal popup-->
+	
+	<div class="modal-header">
+		
+		<div class="title">1995</div>
+		
+		<button class="close-button" id="close">&times;</button><!--header displays year and has an x button to close-->
+	</div>
+	
+	<div class="modal-body">
+		
+		<button type="button" id="button2" onClick="showGAME()">Launch Games</button><!--when user presses the button it runs the showgame function-->
+		<br><br>
+	</div>
+
+
+
+<style>/*styling for the xml table*/
+table,th,td {
+border : 1px solid #FFFFFF;
+border-collapse: collapse;
+position: relative;
+left: 6vh;
+color: white;
+font-size: large;
+font-family: "SF Pro Display";
+font-weight: 1000;
+top: -3vh;
+}
+th,td {
+padding: 5px;
+}/*styling for table*/
+</style>
+
+<table id="demo"></table><!--table-->
+
+<script>//javascript for the xml. send a request to get the xml file and loop through the data to display in a table
+	
+function loadXMLDoc() {//function loads xml document
+	
+var xmlhttp = new XMLHttpRequest();//sends http request
+	
+xmlhttp.onreadystatechange = function() {
+	
+if (this.readyState == 4 && this.status == 200) {
+	
+infotableFunction(this);
+}
+};
+	
+xmlhttp.open("GET", "PS1-1995-FACTS.xml", true);//if the ready state and status are 4 and 200 it successfully gets and open xml document and runs myFunction funtion
+	
+xmlhttp.send();//sends xml document to domain to show on webpage
+}
+	
+	
+function infotableFunction(xml) {//function helps setup the table
+var i;
+var xmlDoc = xml.responseXML;
+var table="<tr><th>DESCRIPTION</th><th>YEAR</th></tr>";//two columns for table
+var x = xmlDoc.getElementsByTagName("FACTS");
+	
+for (i = 0; i <x.length; i++) {
+table += "<tr><td>" +//loops through the length of facts element and displays the elements in the table
+	
+x[i].getElementsByTagName("DESCRIPTION")[0].childNodes[0].nodeValue +//gets all the description values
+	
+"</td><td>" +
+x[i].getElementsByTagName("YEAR")[0].childNodes[0].nodeValue +//gets all the year values
+	
+"</td></tr>";
+}
+document.getElementById("demo").innerHTML = table;//puts them in a table
+}
+</script>
+	
+	
+<div id="showGAME" style="display:none"></div><br>
+	
+<input id="previousbutton" style="display:none" type="button" onclick="previous1()" value="<<">
+	
+<input id="nextbutton" style="display:none" type="button" onclick="next1()" value=">>"><!--all inputs initally not displayed as user needs to interact with button to view data-->
+
+<script>//also retrieved from https://www.w3schools.com/xml/ajax_applications.asp
+var i = 0;
+var x1 = "";
+displayGAME(i);
+
+function displayGAME(i) {
+	
+    var xmlhttp = new XMLHttpRequest();
+	
+    xmlhttp.onreadystatechange = function() {
+		
+        if (this.readyState == 4 && this.status == 200) {
+			
+            launchgamesFunction(this, i);
+        }
+    };
+    xmlhttp.open("GET", "LAUNCH-GAMES.xml", true);
+	
+    xmlhttp.send();
+}//sends xml request to open launch games xml file
+
+function launchgamesFunction(xml, i) {
+	
+var xmlDoc = xml.responseXML; 
+	
+x1 = xmlDoc.getElementsByTagName("GAME");
+document.getElementById("showGAME").innerHTML =
+	
+"Title: " +
+x1[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue +
+	
+"<br>Developer: " +
+x1[i].getElementsByTagName("DEVELOPER")[0].childNodes[0].nodeValue +
+	
+"<br>Imdb Rating: " + 
+x1[i].getElementsByTagName("IMDB")[0].childNodes[0].nodeValue +
+	
+"<br>Genre: " + 
+x1[i].getElementsByTagName("GENRE")[0].childNodes[0].nodeValue +
+	
+"<br>More info: " + "<a href='"+ x1[i].getElementsByTagName("URL")[0].childNodes[0].nodeValue +"'>" + x1[i].getElementsByTagName("URL")[0].childNodes[0].nodeValue + "</a>"
+}//chooses to displays all the data within each element
+
+
+function next1() {	
+if (i < x1.length-1) {
+  i++;
+  displayGAME(i);
+  }
+}//next button views next elements
+
+	
+function previous1() {	
+if (i > 0) {	
+  i--;
+  displayGAME(i);
+  }
+}//previous button views previous elements
+	
+	
+function showGAME() {//retrieved from https://moodle.port.ac.uk/mod/book/view.php?id=1326349&chapterid=236502
+	if (document.getElementById("showGAME").style.display === "none") {
+		
+        document.getElementById("showGAME").style.display = "block";
+        
+		document.getElementById("previousbutton").style.display = "block";
+        
+		document.getElementById("nextbutton").style.display = "block";//data in showgame function is initally hidden and once clicked is displayed
+        
+
+	} else 
+
+    document.getElementById("showGAME").style.display = "none";
+	
+    document.getElementById("previousbutton").style.display = "block";
+    
+	document.getElementById("nextbutton").style.display = "block";//once clicked again the data is hidden
+   
+}
+</script>
+	
+</div><!--closing div for modal body-->
+
+</html>

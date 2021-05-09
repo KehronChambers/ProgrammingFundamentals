@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<LAUNCH-TITLES xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<GAME>
+		<TITLE>Air Combat</TITLE>
+		<DEVELOPER>Namco</DEVELOPER>
+		<IMDB>0.67</IMDB>
+		<GENRE>Air Combat Simulation</GENRE>
+		<URL>https://en.wikipedia.org/wiki/Air_Combat#Gameplay</URL>
+	</GAME>
+	<GAME>
+		<TITLE>Battle Arena Toshinden</TITLE>
+		<DEVELOPER>Tamsoft</DEVELOPER>
+		<IMDB>0.69</IMDB>
+		<GENRE>Fighting</GENRE>
+		<URL>https://en.wikipedia.org/wiki/Battle_Arena_Toshinden</URL>
+	</GAME>
+	<GAME>
+		<TITLE>ESPN Extreme Games</TITLE>
+		<DEVELOPER>Sony Interactive Studios America</DEVELOPER>
+		<IMDB>0.72</IMDB>
+		<GENRE>Racing</GENRE>
+		<URL>https://en.wikipedia.org/wiki/ESPN_Extreme_Games#Reception</URL>
+	</GAME>
+	<GAME>
+		<TITLE>Kileak - The DNA Imperative</TITLE>
+		<DEVELOPER>Genki</DEVELOPER>
+		<IMDB>0.56</IMDB>
+		<GENRE>First-person shooter</GENRE>
+		<URL>https://en.wikipedia.org/wiki/Kileak:_The_DNA_Imperative</URL>
+	</GAME>
+	<GAME>
+		<TITLE>NBA JAM Tournament Edition</TITLE>
+		<DEVELOPER>Midway, Electronic Arts</DEVELOPER>
+		<IMDB>0.84</IMDB>
+		<GENRE>Sports</GENRE>
+		<URL>https://en.wikipedia.org/wiki/NBA_Jam</URL>
+	</GAME>
+	<GAME>
+		<TITLE>Power Serve 3D Tennis</TITLE>
+		<DEVELOPER>SPS</DEVELOPER>
+		<IMDB>0.2</IMDB>
+		<GENRE>Sports</GENRE>
+		<URL>https://en.wikipedia.org/wiki/Power_Serve_3D_Tennis</URL>
+	</GAME>
+	<GAME>
+		<TITLE>The Raiden Project</TITLE>
+		<DEVELOPER>Seibu Kaihatsu</DEVELOPER>
+		<IMDB>0.6</IMDB>
+		<GENRE>Vertical scrolling shooter</GENRE>
+		<URL>https://en.wikipedia.org/wiki/The_Raiden_Project</URL>
+	</GAME>
+	<GAME>
+		<TITLE>Rayman</TITLE>
+		<DEVELOPER>Ubi Studios</DEVELOPER>
+		<IMDB>0.76</IMDB>
+		<GENRE>Platform</GENRE>
+		<URL>https://en.wikipedia.org/wiki/Rayman</URL>
+	</GAME>
+	<GAME>
+		<TITLE>Ridge Racer</TITLE>
+		<DEVELOPER>Namco</DEVELOPER>
+		<IMDB>0.71</IMDB>
+		<GENRE>Racing</GENRE>
+		<URL>https://en.wikipedia.org/wiki/Ridge_Racer_(1993_video_game)</URL>
+	</GAME>
+	<GAME>
+		<TITLE>Street Fighter: The Movie</TITLE>
+		<DEVELOPER>Incredible Technologies</DEVELOPER>
+		<IMDB>0.43</IMDB>
+		<GENRE>Fighting</GENRE>
+		<URL>https://en.wikipedia.org/wiki/Street_Fighter:_The_Movie_(arcade_game)</URL>
+	</GAME>
+	<GAME>
+		<TITLE>Total Eclipse Turbo</TITLE>
+		<DEVELOPER>Crystal Dynamics</DEVELOPER>
+		<IMDB>0.4</IMDB>
+		<GENRE>Space flight simulation</GENRE>
+		<URL>https://en.wikipedia.org/wiki/Total_Eclipse_(1994_video_game)</URL>
+	</GAME>
+	<GAME>
+		<TITLE>Wipeout </TITLE>
+		<DEVELOPER>Psygnosis</DEVELOPER>
+		<IMDB>0.75</IMDB>
+		<GENRE>Racing</GENRE>
+		<URL>https://en.wikipedia.org/wiki/Wipeout_(video_game)</URL>
+	</GAME>
+	<GAME>
+		<TITLE>Zero Divide</TITLE>
+		<DEVELOPER>ZOOM</DEVELOPER>
+		<IMDB>0.65</IMDB>
+		<GENRE>3D action fighting</GENRE>
+		<URL>https://en.wikipedia.org/wiki/Zero_Divide</URL>
+	</GAME>
+</LAUNCH-TITLES>
